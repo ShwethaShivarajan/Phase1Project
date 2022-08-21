@@ -38,7 +38,7 @@ public class Amazon {
 				.findElements(By.xpath("//div[@data-component-type='s-search-result']//span[@class='a-price']"));
 
 		//Print the names and price in console
-		System.out.println("The product names are :");
+		System.out.println("The total products are " + SearchResult.size());
 		for (int i = 0; i < SearchResult.size(); i++) {
 
 			System.out.println(SearchResult.get(i).getText() + " " + price.get(i).getText());
